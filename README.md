@@ -88,4 +88,3 @@ Berikut adalah detail setiap negara:
           - Makan enak di Jepang (Reward: $10)
           - Bantu kakek menanam tanaman (Reward: $35)
           - Mandi di pemandian air panas (Reward: $25)
-     

@@ -427,7 +427,7 @@
     position: absolute;
     margin-bottom: 120px;
     margin-right: 100px;
-    right: calc(var(--pixel-size) * 2);
+    right: calc(var(--pixel-size) * -20);
     bottom: calc(var(--pixel-size) * 2);
     width: calc(var(--pixel-size) * 37);
     height: calc(var(--pixel-size) * 38);
@@ -435,7 +435,7 @@
 }
 .dpad-button svg {
     display: block;
-    height: calc(var(--pixel-size) * 13);
+    height: calc(var(--pixel-size) * 16);
 }
 .dpad-up {
     position: absolute;
@@ -444,18 +444,18 @@
 }
 .dpad-down {
     position: absolute;
-    bottom: var(--pixel-size);
+    bottom: calc(var(--pixel-size) * -8);
     left: calc(var(--pixel-size) * 12);
 }
 .dpad-left {
     position: absolute;
-    top: calc(var(--pixel-size) * 12);
-    left: 0;
+    top: calc(var(--pixel-size) * 15);
+    left: calc(var(--pixel-size) * -3);
 }
 .dpad-right {
     position: absolute;
-    top: calc(var(--pixel-size) * 12);
-    right: 0;
+    top: calc(var(--pixel-size) * 15);
+    right: calc(var(--pixel-size) * -6);
 }
 .headline {
     position: absolute;

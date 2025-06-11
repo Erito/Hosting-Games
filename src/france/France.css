@@ -406,41 +406,41 @@
 }
 
 /* Dpad & headline */
-.france-root .dpad {
+.dpad {
     position: absolute;
     margin-bottom: 120px;
     margin-right: 100px;
-    right: calc(var(--pixel-size) * 2);
+    right: calc(var(--pixel-size) * -20);
     bottom: calc(var(--pixel-size) * 2);
     width: calc(var(--pixel-size) * 37);
     height: calc(var(--pixel-size) * 38);
     user-select: none;
 }
-.france-root .dpad-button svg {
+.dpad-button svg {
     display: block;
-    height: calc(var(--pixel-size) * 13);
+    height: calc(var(--pixel-size) * 16);
 }
-.france-root .dpad-up {
+.dpad-up {
     position: absolute;
     left: calc(var(--pixel-size) * 12);
     top: 0;
 }
-.france-root .dpad-down {
+.dpad-down {
     position: absolute;
-    bottom: var(--pixel-size);
+    bottom: calc(var(--pixel-size) * -8);
     left: calc(var(--pixel-size) * 12);
 }
-.france-root .dpad-left {
+.dpad-left {
     position: absolute;
-    top: calc(var(--pixel-size) * 12);
-    left: 0;
+    top: calc(var(--pixel-size) * 15);
+    left: calc(var(--pixel-size) * -3);
 }
-.france-root .dpad-right {
+.dpad-right {
     position: absolute;
-    top: calc(var(--pixel-size) * 12);
-    right: 0;
+    top: calc(var(--pixel-size) * 15);
+    right: calc(var(--pixel-size) * -6);
 }
-.france-root .headline {
+.headline {
     position: absolute;
     top: calc(var(--pixel-size) * 2);
     right: calc(var(--pixel-size) * 2);

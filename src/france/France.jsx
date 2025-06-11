@@ -263,21 +263,11 @@ function France() {
 
     //======================================MANDI BUTTON========================================\
     function handleMandiClick() {
-        const questIdx = displayedQuests.findIndex(q => q.action === "fotoJepang");
         let shower = 100;
         setBath(bath + shower);
         localStorage.setItem("bath", bath + shower);
         triggerBlackScreen(1500, () => {
-            if (questIdx !== -1) {
-                const newQuests = [...displayedQuests];
-                newQuests.splice(questIdx, 1);
-                setDisplayedQuests(newQuests);
-                localStorage.setItem("displayedQuests", JSON.stringify(newQuests));
-                alert("Kamu sedang berendam di pemandian air panas");
-                alert("Quest berendam di pemandian air panas berhasil diselesaikan!!!");
-            } else {
-                alert("Kamu sedang berendam di pemandian air panas");
-            }
+            alert("Kamu sedang berendam di pemandian air panas");
         });
     }
     useEffect(() => {

@@ -413,35 +413,35 @@
     position: absolute;
     margin-bottom: 120px;
     margin-right: 100px;
-    right: calc(var(--pixel-size) * -20);
-    bottom: calc(var(--pixel-size) * 2);
+    right: calc(var(--pixel-size) * 40);
+    bottom: calc(var(--pixel-size) * 10);
     width: calc(var(--pixel-size) * 37);
     height: calc(var(--pixel-size) * 38);
     user-select: none;
 }
 .dpad-button svg {
     display: block;
-    height: calc(var(--pixel-size) * 16);
+    height: calc(var(--pixel-size) * 31);
 }
 .dpad-up {
     position: absolute;
-    left: calc(var(--pixel-size) * 12);
-    top: 0;
+    left: calc(var(--pixel-size) * 25);
+    top: calc(var(--pixel-size) * -14);
 }
 .dpad-down {
     position: absolute;
-    bottom: calc(var(--pixel-size) * -8);
-    left: calc(var(--pixel-size) * 12);
+    bottom: calc(var(--pixel-size) * -37);
+    left: calc(var(--pixel-size) * 25);
 }
 .dpad-left {
     position: absolute;
     top: calc(var(--pixel-size) * 15);
-    left: calc(var(--pixel-size) * -3);
+    left: calc(var(--pixel-size) * -4);
 }
 .dpad-right {
     position: absolute;
     top: calc(var(--pixel-size) * 15);
-    right: calc(var(--pixel-size) * -6);
+    right: calc(var(--pixel-size) * -48);
 }
 .headline {
     position: absolute;

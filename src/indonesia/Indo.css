@@ -429,8 +429,8 @@
     margin-right: 100px;
     right: calc(var(--pixel-size) * 2);
     bottom: calc(var(--pixel-size) * 2);
-    width: calc(var(--pixel-size) * 50);
-    height: calc(var(--pixel-size) * 50);
+    width: calc(var(--pixel-size) * 37);
+    height: calc(var(--pixel-size) * 38);
     user-select: none;
 }
 .dpad-button svg {

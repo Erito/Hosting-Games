@@ -31,6 +31,9 @@ function USA() {
         if (speed === 1) {
             setSpeed(3);
             localStorage.setItem("speed", 3);
+        } else if (speed === 3) {
+            setSpeed(5);
+            localStorage.setItem("speed", 5);
         } else {
             setSpeed(1);
             localStorage.setItem("speed", 1);
@@ -38,7 +41,7 @@ function USA() {
     }
     useEffect(() => {
         const savedSpeed = Number(localStorage.getItem("speed"));
-        if (savedSpeed === 3 || savedSpeed === 1) {
+        if ([1, 3, 5].includes(savedSpeed)) {
             setSpeed(savedSpeed);
         }
     }, []);

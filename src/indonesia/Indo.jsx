@@ -39,17 +39,20 @@ function Indo() {
         if (speed === 1) {
             setSpeed(3);
             localStorage.setItem("speed", 3);
+        } else if (speed === 3) {
+            setSpeed(5);
+            localStorage.setItem("speed", 5);
         } else {
             setSpeed(1);
             localStorage.setItem("speed", 1);
         }
     }
     useEffect(() => {
-    const savedSpeed = Number(localStorage.getItem("speed"));
-    if (savedSpeed === 3 || savedSpeed === 1) {
-        setSpeed(savedSpeed);
-    }
-}, []);
+        const savedSpeed = Number(localStorage.getItem("speed"));
+        if ([1, 3, 5].includes(savedSpeed)) {
+            setSpeed(savedSpeed);
+        }
+    }, []);
 
     const [money, setMoney] = useState(() => Number(localStorage.getItem("money")) || 100);
     const [bath, setBath] = useState(() => Number(localStorage.getItem("bath")) || 50);
@@ -581,7 +584,7 @@ function Indo() {
                                     </div>
                                     <Status bath={bath} hunger={hunger} sleep={sleep} happiness={happiness} health={health} money={money} />
                                     <DisplayDate />
-                                    <button style={{ position: "absolute", top: 10, right: 10, zIndex: 1000, padding: "8px 16px", background: speed === 3 ? "#4caf50" : "#2196f3", color: "#fff", border: "none", borderRadius: 4, cursor: "pointer"}} onClick={toggleSpeed} > Speed: {speed}x </button>
+                                    <button style={{ position: "absolute", top: 10, right: 10, zIndex: 1000, padding: "8px 16px", background: speed === 3 ? "#4caf50" : "#2196f3", color: "#fff", border: "none", borderRadius: 4, cursor: "pointer" }} onClick={toggleSpeed} > Speed: {speed}x </button>
                                     <div className="button-map">{showMapButton && (<Buttons value="Map" className="map-button" onClick={handleMapClick} />)}</div>
                                     <div className="button-sleep">{showSleepButton && (<Buttons value="Sleep" className={"sleep-button"} onClick={handleSleepClick} />)}</div>
                                     <div className="button-foto">{showFotoButton && (<Buttons value="Foto" className="foto-button" onClick={handleFotoClick} />)}</div>

@@ -269,7 +269,7 @@ function Japan() {
 
     //======================================MANDI BUTTON========================================\
     function handleMandiClick() {
-        const questIdx = displayedQuests.findIndex(q => q.action === "fotoJepang");
+        const questIdx = displayedQuests.findIndex(q => q.action === "mandiJepang");
         let shower = 100;
         setBath(bath + shower);
         localStorage.setItem("bath", bath + shower);
